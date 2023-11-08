@@ -44,17 +44,21 @@ deprecation_message: ''
 properties: []
 methods:
   - name: AvatarEditorService:GetAccessoryType
-    summary: ''
-    description: ''
+    summary: |
+      Converts an `Enum.AvatarAssetType` to a `Enum.AccessoryType`.
+    description: |
+      Converts an `Enum.AvatarAssetType` to a `Enum.AccessoryType`. This could be used in `Class.HumanoidDescription.AccessoryBlob`, and to specify the type in Accessory.
     code_samples: []
     parameters:
       - name: avatarAssetType
         type: AvatarAssetType
         default:
-        summary: ''
+        summary: |
+          The avatarAssetType to get the AccessoryType for.
     returns:
       - type: AccessoryType
-        summary: ''
+        summary: |
+          The AccessoryType of the previously given avatarAssetType.
     tags: []
     deprecation_message: ''
     security: None
@@ -272,17 +276,22 @@ methods:
     security: None
     thread_safety: Unsafe
   - name: AvatarEditorService:ConformToAvatarRules
-    summary: ''
-    description: ''
+    summary: |
+      Used to apply avatar rules to the `Class.HumanoidDescription` if
+      necessary.
+    description: |
+      Returns a new `Class.HumanoidDescription` always conforming to avatar rules.
     code_samples: []
     parameters:
       - name: humanoidDescription
         type: HumanoidDescription
         default:
-        summary: ''
+        summary: |
+          The HumanoidDescription to ensure it conforms to the avatar's rules.
     returns:
       - type: HumanoidDescription
-        summary: ''
+        summary: |
+          Returns a HumanoidDescription that conforms to the avatar's rules.
     tags:
       - Yields
     deprecation_message: ''
