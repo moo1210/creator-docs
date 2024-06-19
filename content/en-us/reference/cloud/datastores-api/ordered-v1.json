@@ -148,14 +148,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "CreateEntryRequest",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/CreateEntryRequest"
-            }
           }
         ],
         "requestBody": {
@@ -385,14 +377,6 @@
             }
           },
           {
-            "name": "UpdateEntryRequest",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/UpdateEntryRequest"
-            }
-          },
-          {
             "name": "allow_missing",
             "in": "query",
             "description": "The flag to allow the creation of an entry if the entry doesn't exist. See [Allow Missing Flags](../../../cloud/open-cloud/data-store-api-handling.md#allow-missing-flags).",
@@ -487,14 +471,6 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
-          },
-          {
-            "name": "incrementEntryRequest",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/IncrementEntryRequest"
             }
           }
         ],

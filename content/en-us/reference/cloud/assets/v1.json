@@ -90,26 +90,6 @@
         "summary": "Creates an asset with provided content and metadata.",
         "description": "Creates an asset with provided content and metadata.",
         "operationId": "Assets_CreateAsset",
-        "parameters": [
-          {
-            "name": "request",
-            "in": "formData",
-            "description": "Asset attributes to create or update. Send as form data like the following example request shows.",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/Asset"
-            }
-          },
-          {
-            "name": "fileContent",
-            "in": "formData",
-            "description": "The binary asset file path and the content type. Format: `fileContent=@\"/filepath/{File}\";type={ContentType}`. Example: `fileContent=@\"/filepath/model.fbx\";type=model/fbx`. See [Content Types](../../../cloud/open-cloud/usage-assets.md#supported-asset-types-and-limits).",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Returns the Operation ID for checking the creation status.",
@@ -169,23 +149,6 @@
         "description": "Updates an asset with provided content and metadata, including the description, display name, icon, and previews. Currently can only update the content body for **Models**. Icons must be **Image** assets with square dimensions. Previews must be either **Image** or **YoutubeVideo** assets.",
         "operationId": "Assets_UpdateAsset",
         "parameters": [
-          {
-            "name": "request",
-            "in": "formData",
-            "description": "Send as form data like the following example requests.",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/Asset"
-            }
-          },
-          {
-            "name": "fileContent",
-            "in": "formData",
-            "description": "The binary asset file path and the content type. Format: `fileContent=@\"/filepath/{File}\";type={ContentType}`. Example: `fileContent=@\"/filepath/model.fbx\";type=model/fbx`. See [Content Types](../../../cloud/open-cloud/usage-assets.md#supported-asset-types-and-limits).",
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "updateMask",
             "in": "query",
@@ -388,14 +351,7 @@
                 "description": "The unique identifier of the asset.",
                 "required": true,
                 "schema": {"type": "string"}
-            },
-            {
-              "name": "assetVersion",
-              "in": "formData",
-              "description": "The asset version path in the format of `assets/{assetId}/versions/{versionNumber}`.",
-              "required": true,
-              "schema": {"type": "string"}
-          }
+            }
         ],
         "requestBody": {
             "required": true,

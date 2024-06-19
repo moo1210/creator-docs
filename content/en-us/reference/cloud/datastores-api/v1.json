@@ -64,7 +64,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -202,7 +203,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -313,7 +315,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -338,12 +341,14 @@
               },
               "roblox-entry-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-version-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-userids": {
@@ -526,7 +531,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -618,7 +624,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
@@ -720,7 +727,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -745,12 +753,14 @@
               },
               "roblox-entry-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-version-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-userids": {
@@ -891,7 +901,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
@@ -916,12 +927,14 @@
               },
               "roblox-entry-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-version-created-time": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "roblox-entry-attributes": {
@@ -1090,7 +1103,8 @@
             "headers": {
               "date": {
                 "schema": {
-                  "type": "date-time"
+                  "type": "string",
+                  "format": "date-time"
                 }
               },
               "content-type": {
